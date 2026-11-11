@@ -1,0 +1,24 @@
+/* Xóa margin, padding mặc định và dấu chấm tròn của danh sách */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cho các thẻ li nằm ngang thành hàng */
+ul li {
+    display: inline-block;
+    margin-right: 5px; /* Khoảng cách nhỏ màu trắng giữa các ô */
+}
+
+/* Định dạng các ô liên kết bên trong */
+ul li a {
+    display: inline-block;
+    background-color: #00ffff;      /* Màu nền cyan/xanh lơ */
+    color: #0000ff;                 /* Màu chữ xanh dương */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-decoration: underline;     /* Chữ gạch chân theo mẫu */
+    padding: 6px 30px;              /* Đệm trên/dưới và trái/phải */
+    text-align: center;
+}

@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 40px 20px;
+}
+
+/* Khối bao ngoài portfolio */
+.portfolio {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Tiêu đề MY PORTFOLIO kèm đường gạch ngắn màu xanh ngọc bên dưới */
+.portfolio h2 {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.portfolio h2 i {
+    color: #2ca69f;
+    margin-right: 8px;
+}
+
+.portfolio h2::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #2ca69f;
+    margin: 12px auto 0;
+    border-radius: 2px;
+}
+
+/* Danh sách menu tab */
+.list-tab {
+    list-style: none;
+    margin-bottom: 35px;
+    padding: 0;
+}
+
+.list-tab li {
+    display: inline-block;
+    margin: 0 14px;
+}
+
+.list-tab li a {
+    text-decoration: none;
+    color: #555555;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.2s ease;
+}
+
+.list-tab li a i {
+    color: #2ca69f;
+    font-size: 0.9em;
+    margin-right: 5px;
+}
+
+/* Mục "All" đang active có màu xanh ngọc */
+.list-tab li:first-child a,
+.list-tab li a:hover {
+    color: #2ca69f;
+}
+
+/* Danh sách ảnh lưới 3 cột */
+.galerry {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Chia đều 3 cột */
+    gap: 25px;                            /* Khoảng cách giữa các ô */
+    padding: 0;
+}
+
+.galerry li a {
+    display: block;
+    overflow: hidden;
+}
+
+.galerry li img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+.galerry li a:hover img {
+    transform: scale(1.02);
+}

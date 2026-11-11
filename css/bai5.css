@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+/* Canh giữa toàn bộ nội dung khối banner */
+.hero-container {
+    text-align: center; /* Gợi ý i */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* 1. Phần Logo UEH - Khoa CNTTKD */
+.hero-logo {
+    max-width: 280px;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+/* 2. Tiêu đề chính */
+.hero-title {
+    font-size: 40px;
+    font-weight: 500;
+    color: #333333;
+    margin: 0 0 16px 0;
+}
+
+/* Chữ "Shared Hosting" màu xanh dương nổi bật */
+.hero-title .highlight {
+    color: #00a8ff;
+    font-weight: bold;
+}
+
+/* 3. Đoạn mô tả in nghiêng */
+.hero-desc {
+    font-size: 14px;
+    color: #555555;
+    font-style: italic;
+    margin: 0 0 30px 0;
+}
+
+/* 4. Định dạng hai nút liên kết */
+.btn-group {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;          /* Gợi ý iii */
+    text-decoration: none;         /* Gợi ý ii */
+    background-color: #333333;     /* Màu nền xám đen/than */
+    color: #ffffff;                /* Màu chữ trắng */
+    font-size: 14px;
+    padding: 12px 28px;
+    border-radius: 4px;            /* Bo nhẹ góc nút */
+    margin: 0 8px;                 /* Khoảng cách giữa 2 nút */
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #1a1a1a;
+}
